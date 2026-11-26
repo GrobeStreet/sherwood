@@ -25,7 +25,7 @@
 }
 @media (prefers-color-scheme:dark){
   :root:not([data-theme="light"]){
-    --pine:#12352780; --pine-deep:#0a1b14;
+    --pine:#1a4230; --pine-deep:#0a1b14;
     --parch:#111a14; --parch-2:#152018; --paper:#18241b;
     --lincoln:#49a869; --lincoln-bright:#62c184;
     --gold:#d7a24a; --gold-bright:#e6b968;
@@ -119,10 +119,22 @@ section{padding:64px 0}
 .pullquote{font-family:var(--disp);font-weight:700;font-size:clamp(1.5rem,3.6vw,2.2rem);line-height:1.18;
   color:var(--pine);border-left:5px solid var(--gold);padding:4px 0 4px 22px;margin:34px 0}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .pullquote{color:var(--lincoln-bright)}}
+/* Dark mode: a pine button on the near-black background is too low-contrast to see,
+   so the primary "App Store" / Decode actions become a vivid, obvious green. */
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]) .btn-pine{background:var(--lincoln);color:#08140d}
+  :root:not([data-theme="light"]) .btn-pine:hover{background:var(--lincoln-bright);color:#08140d}
+  :root:not([data-theme="light"]) .nav .get{background:var(--lincoln);color:#08140d}
+  :root:not([data-theme="light"]) .nav .get:hover{background:var(--lincoln-bright);color:#08140d}
+  :root:not([data-theme="light"]) .appcard .store{background:var(--lincoln);color:#08140d}
+  :root:not([data-theme="light"]) .appcard:not(.soon):hover .store{background:var(--lincoln-bright);color:#08140d}
+}
 
 /* ---------- featured app (GAMELIN) ---------- */
 .featured{display:grid;grid-template-columns:132px 1fr;gap:26px;align-items:start}
 .featured .ic{width:132px;height:132px;border-radius:28px;box-shadow:0 10px 30px rgba(13,36,27,.28);border:1px solid rgba(0,0,0,.08)}
+.featured .ic-link{display:inline-block;line-height:0;border-radius:28px;transition:transform .15s ease}
+.featured .ic-link:hover{transform:scale(1.03)}
 .featured h3{font-size:2rem;margin:.1em 0 .1em}
 .featured .tagl{color:var(--gold);font-weight:700;font-family:var(--disp);font-size:1.05rem;margin-bottom:.5em}
 .featured .btn{margin-top:14px}
