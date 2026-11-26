@@ -12,18 +12,19 @@ export default async (req) => {
   const store = getStore('sherwood-analytics');
   const { blobs } = await store.list();
 
-  let total = 0;
   const byDay = {};
   const byPath = {};
   const byReferrer = {};
 
   for (const b of blobs) {
     const v = Number(await store.get(b.key)) || 0;
-    if (b.key === 'total') total = v;
-    else if (b.key.startsWith('day:')) byDay[b.key.slice(4)] = v;
+    if (b.key.startsWith('day:')) byDay[b.key.slice(4)] = v;
     else if (b.key.startsWith('path:')) byPath[b.key.slice(5)] = v;
     else if (b.key.startsWith('ref:')) byReferrer[b.key.slice(4)] = v;
   }
+
+  // Total = sum of per-path counts, so the readout is always self-consistent.
+  const total = Object.values(byPath).reduce((a, b) => a + b, 0);
 
   const sortDesc = (o) => Object.fromEntries(Object.entries(o).sort((a, b) => b[1] - a[1]));
 

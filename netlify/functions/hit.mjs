@@ -19,7 +19,6 @@ export default async (req) => {
       await store.set(key, String(cur + 1));
     };
 
-    await bump('total');
     await bump(`day:${day}`);
     await bump(`path:${path}`);
     if (ref) await bump(`ref:${ref}`);
