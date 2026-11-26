@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://grobestreet.github.io/sherwood/sitemap.xml
+Sitemap: https://sherwoodfree.com/sitemap.xml

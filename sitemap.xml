@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://grobestreet.github.io/sherwood/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://grobestreet.github.io/sherwood/vehicles.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://grobestreet.github.io/sherwood/boats.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://grobestreet.github.io/sherwood/about.html</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://sherwoodfree.com/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://sherwoodfree.com/vehicles.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://sherwoodfree.com/boats.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://sherwoodfree.com/about.html</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
 </urlset>
