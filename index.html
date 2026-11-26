@@ -3,103 +3,211 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Sherwood — records they charge for, free</title>
-<meta name="description" content="Companies charge $20–$60 for records that are free and public. Sherwood decodes them for you — VIN checks, boat hull numbers and more — free, honest, no account.">
+<title>Sherwood — free apps for the stuff they overcharge you for</title>
+<meta name="description" content="Most of what you pay for is already free and public — VIN histories, boat records, recalls, racing reads, tax math. Sherwood decodes it and gives it back as free apps. No account, no email, no catch.">
+<link rel="canonical" href="https://grobestreet.github.io/sherwood/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Sherwood — free apps for the stuff they overcharge you for">
+<meta property="og:description" content="Most of what you pay for is already free and public. Sherwood gives it back — free apps, no account, no catch. Start with GAMELIN's free racing edge.">
+<meta property="og:url" content="https://grobestreet.github.io/sherwood/">
+<meta property="og:image" content="https://grobestreet.github.io/sherwood/assets/og.png">
+<meta property="og:site_name" content="Sherwood">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Sherwood — free apps for the stuff they overcharge you for">
+<meta name="twitter:description" content="Most of what you pay for is already free and public. Sherwood gives it back — free apps, no account, no catch.">
+<meta name="twitter:image" content="https://grobestreet.github.io/sherwood/assets/og.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Libre+Franklin:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/sherwood.css">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='14' cy='18' r='11' fill='none' stroke='%232f7047' stroke-width='2.4'/%3E%3Cpath d='M14 18 L29 3' stroke='%23c68a2c' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='14' cy='18' r='11' fill='none' stroke='%232f8049' stroke-width='2.4'/%3E%3Cpath d='M14 18 L29 3' stroke='%23c08a2b' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","name":"Sherwood","url":"/","description":"Free decoders for public records that companies resell — VIN checks, boat hull numbers and more."}
+{"@context":"https://schema.org","@graph":[
+ {"@type":"Organization","@id":"https://grobestreet.github.io/sherwood/#org","name":"Sherwood","url":"https://grobestreet.github.io/sherwood/","slogan":"Records they charge for, free.","description":"A movement that frees public, paywalled tools and gives them back as free apps."},
+ {"@type":"WebSite","@id":"https://grobestreet.github.io/sherwood/#site","url":"https://grobestreet.github.io/sherwood/","name":"Sherwood","publisher":{"@id":"https://grobestreet.github.io/sherwood/#org"},"potentialAction":{"@type":"SearchAction","target":"https://grobestreet.github.io/sherwood/vehicles.html?vin={search_term_string}","query-input":"required name=search_term_string"}},
+ {"@type":"ItemList","name":"Free apps by Sherwood","itemListElement":[
+   {"@type":"ListItem","position":1,"url":"https://apps.apple.com/app/id6835658692","name":"GAMELIN: Race Day Toolkit"},
+   {"@type":"ListItem","position":2,"url":"https://apps.apple.com/app/id6838772879","name":"VIN It: Free VIN Check"},
+   {"@type":"ListItem","position":3,"url":"https://apps.apple.com/app/id6839038339","name":"HIN It: Free Boat VIN Check"},
+   {"@type":"ListItem","position":4,"url":"https://apps.apple.com/app/id6835721036","name":"IEP Binder: Parent Organizer"},
+   {"@type":"ListItem","position":5,"url":"https://apps.apple.com/app/id6836650166","name":"Spare Sense: Bowling Spares"}
+ ]}
+]}
 </script>
 </head>
 <body>
 <header class="site-head"><div class="wrap">
   <a class="brand" href="index.html"><svg class="mark" viewBox="0 0 32 32" aria-hidden="true" fill="none"><circle cx="14" cy="18" r="11" stroke="currentColor" stroke-width="2.2"/><circle cx="14" cy="18" r="5" stroke="currentColor" stroke-width="2.2"/><path d="M14 18 L29 3" stroke="var(--gold)" stroke-width="2.6" stroke-linecap="round"/><path d="M29 3 L22.5 4 M29 3 L28 9.5" stroke="var(--gold)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Sherwood</a>
   <nav class="nav">
-    <a href="vehicles.html">Vehicles</a>
-    <a href="boats.html">Boats</a>
-    <a href="about.html">About</a>
+    <a href="#idea" class="hide-sm">The idea</a>
+    <a href="#apps">Free apps</a>
+    <a href="#tools" class="hide-sm">Web tools</a>
+    <a href="#apps" class="get">Get the apps</a>
   </nav>
 </div></header>
 
-<section class="hero dark">
+<section class="hero">
   <div class="wrap">
-    <span class="eyebrow">take from the paywalls · give to the people</span>
-    <h1>Records they charge for.<br>Free.</h1>
-    <p class="lede">Companies charge $20–$60 for information that is free and public. Sherwood decodes it for you — instantly, honestly, with no account and no catch. We'll even tell you where the parts we <em>can't</em> show for free actually live.</p>
-    <div style="margin-top:22px;display:flex;gap:12px;flex-wrap:wrap">
-      <a class="btn gold" href="vehicles.html">Check a vehicle (VIN)</a>
-      <a class="btn ghost" href="boats.html" style="color:#fff;border-color:rgba(255,255,255,.3)">Check a boat (HIN)</a>
+    <span class="kicker">take from the paywalls — give to the people</span>
+    <h1>Most of what you pay for is already free.</h1>
+    <p class="sub">The reports, the records, the "pro" tools — public data with a padlock bolted on. Sherwood pops the lock and hands it back. Free apps. No account, no email, no catch.</p>
+    <div class="pricewall" aria-hidden="true">
+      <span class="ptag"><s>$59.99 boat report</s></span>
+      <span class="ptag"><s>$40 VIN history</s></span>
+      <span class="ptag"><s>$29/mo CRM</s></span>
+      <span class="ptag"><s>$3,000 website</s></span>
+      <span class="ptag"><s>paywalled picks</s></span>
+      <span class="freebadge">all free</span>
+    </div>
+    <div class="cta">
+      <a class="btn btn-gold" href="#apps">See the free apps</a>
+      <a class="btn btn-ghost on-dark" href="#idea">Why we do this</a>
+    </div>
+  </div>
+  <svg class="hero-trees" viewBox="0 0 1440 120" preserveAspectRatio="none" fill="currentColor" aria-hidden="true"><path d="M0 120V96l24-20 10 14 18-26 14 18 20-30 16 22 22-34 16 24 20-30 18 26 16-22 22 32 14-20 20 30 18-26 16 24 22-34 16 24 20-30 18 26 14-20 22 32 16-24 20 30 18-26 16 22 22-32 14 20 20-28 18 24 16-20 22 30 16-22 20 28 18-24 16 20 22-28 14 18 20-26 18 22 16-18 22 26 16-20 20 24 18-22 16 18 22-24 14 16 20-22 18 20 16-16 22 22 16-18 20 20 18-18 16 14 22 18 16-14 20 16 18-14 16 10 22 12 16-10 20 12V120z"/></svg>
+</section>
+
+<section id="idea" class="band-paper">
+  <div class="wrap">
+    <div class="manifesto">
+      <h2>The whole game is rigged. So we flipped it.</h2>
+      <p class="drop">Here's the secret the people charging you don't want out: most of it was never theirs to sell. The VIN history. The flood map. The recall notice. The wage figures. The hull records. Public data — gathered with public money, sitting on government servers, already yours. Then somebody bolts on a login, prints a price, and sells you back what you already own.</p>
+      <p>Sherwood started with one person who got sick of it — a solo builder quoted thousands for a website, bled dry by a CRM, renting tools just to post online, slowly realizing the little guy wasn't meant to win. Not alone. Not against companies with teams and budgets and a hundred ways to charge you.</p>
+      <p>So they stopped trying to buy their way in and learned to build. Not to replace anyone — to orchestrate. To stand up the things the gatekeepers swore took a department and a down payment. And once the first paywall fell, the rest looked flimsy too. Every "premium report" was free underneath. Every "pro tool" was a padlock on a public door.</p>
+      <p class="pullquote">They used their position to lock up what belongs to everyone. We're just handing out the key.</p>
+      <p>So that's what this is. Free apps that do the thing the paid ones do — without the account, the email, the "we just need a few details." You show up, you get what you came for, you leave a little less ripped off. No name on the door, no pitch, no upsell waiting three screens in. Just the stuff, free.</p>
+      <p>It's no fun for them when the rabbit's got the gun.</p>
     </div>
   </div>
 </section>
 
 <section>
   <div class="wrap">
-    <div class="grid two">
-      <div class="card tool-card">
-        <svg class="ico" viewBox="0 0 48 48" fill="none" aria-hidden="true"><rect x="6" y="20" width="36" height="12" rx="3" stroke="var(--green-500)" stroke-width="2.4"/><path d="M10 20l4-8h20l4 8" stroke="var(--green-500)" stroke-width="2.4" stroke-linejoin="round"/><circle cx="15" cy="32" r="3.5" fill="var(--gold)"/><circle cx="33" cy="32" r="3.5" fill="var(--gold)"/></svg>
-        <span class="tag">Vehicles</span>
+    <div class="eyebrow-rule">
+      <svg class="flag" viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M8 4v24" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/><path d="M8 5h17l-4 6 4 6H8z" fill="currentColor"/></svg>
+      <h2>Start here: the free edge</h2>
+    </div>
+    <div class="featured">
+      <img class="ic" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/33/4f/15/334f15f0-973e-b442-195a-7b8ea35e66af/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" alt="GAMELIN app icon" loading="lazy" width="132" height="132">
+      <div>
+        <span class="stamp">free</span>
+        <h3>GAMELIN: Race Day Toolkit</h3>
+        <p class="tagl">The racing read the handicapping sites charge a monthly fee for.</p>
+        <p>Paste any TVG or FanDuel race link and GAMELIN gives you a straight bet-or-pass call, the ranked field, and the exact exacta / trifecta / superfecta tickets to play — the same conviction engine as gamelinracing.com, in your pocket. It's the one free app here you can turn into money the same afternoon.</p>
+        <a class="btn btn-pine" href="https://apps.apple.com/app/id6835658692" target="_blank" rel="noopener">Get GAMELIN on the App Store</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="apps" class="band-paper">
+  <div class="wrap">
+    <div class="eyebrow-rule">
+      <svg class="flag" viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M8 4v24" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/><path d="M8 5h17l-4 6 4 6H8z" fill="currentColor"/></svg>
+      <h2>The free arsenal</h2>
+    </div>
+    <p class="lead" style="margin-bottom:26px">Every one of these does what a paid app or a $40 report does — for nothing. Download, use, done. No account on any of them.</p>
+    <div class="arsenal">
+      <article class="appcard">
+        <img class="ic" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/6c/97/bb/6c97bbe1-e2e4-abee-5000-7101efed3901/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" alt="VIN It icon" loading="lazy" width="62" height="62">
+        <div><h4>VIN It</h4><p>Decode any VIN — full build sheet, safety gear, every recall. The honest half of a paid history report.</p>
+        <div class="foot"><span class="stamp">free</span><a class="store" href="https://apps.apple.com/app/id6838772879" target="_blank" rel="noopener">App Store</a><a href="vehicles.html">Try it on the web</a></div></div>
+      </article>
+      <article class="appcard">
+        <img class="ic" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/68/4f/17/684f1762-8ead-9c8c-7654-f1b6b11801f9/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" alt="HIN It icon" loading="lazy" width="62" height="62">
+        <div><h4>HIN It</h4><p>Decode a boat's hull number and reach the free USCG records the $60 "boat history" sites quietly resell.</p>
+        <div class="foot"><span class="stamp">free</span><a class="store" href="https://apps.apple.com/app/id6839038339" target="_blank" rel="noopener">App Store</a><a href="boats.html">Try it on the web</a></div></div>
+      </article>
+      <article class="appcard">
+        <img class="ic" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/3d/4e/71/3d4e71fa-992a-49cc-8e0d-4155f23c9857/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="IEP Binder icon" loading="lazy" width="62" height="62">
+        <div><h4>IEP Binder</h4><p>Keep every IEP and 504 note, goal and meeting date in one place — the organizer schools never hand parents.</p>
+        <div class="foot"><span class="stamp try">free to use</span><a class="store" href="https://apps.apple.com/app/id6835721036" target="_blank" rel="noopener">App Store</a></div></div>
+      </article>
+      <article class="appcard">
+        <img class="ic" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/07/36/85/073685f4-250b-48da-2f5e-248980eb6132/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" alt="Spare Sense icon" loading="lazy" width="62" height="62">
+        <div><h4>Spare Sense</h4><p>Where to stand and aim for every bowling spare — the lane coaching a pro charges by the hour for.</p>
+        <div class="foot"><span class="stamp">free</span><a class="store" href="https://apps.apple.com/app/id6836650166" target="_blank" rel="noopener">App Store</a></div></div>
+      </article>
+      <article class="appcard soon">
+        <div class="ic">Q</div>
+        <div><h4>Quarterly Tax</h4><p>Know exactly what to set aside for 1099 taxes — no subscription, no linking your bank.</p>
+        <div class="foot"><span class="stamp soon-s">coming soon</span></div></div>
+      </article>
+      <article class="appcard soon">
+        <div class="ic">D</div>
+        <div><h4>Drillfolio</h4><p>Turn a golf lesson into a clean practice card to hand your student — the coaching tool, free.</p>
+        <div class="foot"><span class="stamp soon-s">coming soon</span></div></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="tools">
+  <div class="wrap">
+    <div class="eyebrow-rule">
+      <svg class="flag" viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M8 4v24" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/><path d="M8 5h17l-4 6 4 6H8z" fill="currentColor"/></svg>
+      <h2>No phone? Use them right here</h2>
+    </div>
+    <p class="lead" style="margin-bottom:24px">Two of the tools run free in your browser — type and go, nothing stored.</p>
+    <div class="tools2">
+      <div class="toolcard">
+        <svg class="ic2" viewBox="0 0 48 48" fill="none" aria-hidden="true"><rect x="6" y="20" width="36" height="12" rx="3" stroke="currentColor" stroke-width="2.4"/><path d="M10 20l4-8h20l4 8" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/><circle cx="15" cy="32" r="3.5" fill="var(--gold)"/><circle cx="33" cy="32" r="3.5" fill="var(--gold)"/></svg>
         <h3>Free VIN check</h3>
-        <p>Decode any VIN: full build sheet, safety equipment, every open recall, crash ratings — from NHTSA's free database. The honest version of a Carfax teaser.</p>
-        <form onsubmit="location.href='vehicles.html?vin='+encodeURIComponent(this.q.value.trim());return false;" class="lookup" style="margin:0 0 8px">
-          <input name="q" placeholder="Enter a 17-char VIN" autocomplete="off" spellcheck="false" aria-label="VIN">
-          <button class="btn" type="submit">Decode</button>
+        <p>Build sheet, recalls, safety ratings — live from NHTSA.</p>
+        <form onsubmit="location.href='vehicles.html?vin='+encodeURIComponent(this.q.value.trim());return false;">
+          <input name="q" placeholder="Enter a VIN" autocomplete="off" aria-label="VIN"><button class="btn btn-pine" type="submit">Decode</button>
         </form>
       </div>
-      <div class="card tool-card">
-        <svg class="ico" viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M8 30h32l-4 8H12z" stroke="var(--green-500)" stroke-width="2.4" stroke-linejoin="round"/><path d="M24 30V10l12 14" stroke="var(--green-500)" stroke-width="2.4" stroke-linejoin="round"/><path d="M24 14l-9 10" stroke="var(--gold)" stroke-width="2.4" stroke-linejoin="round"/></svg>
-        <span class="tag">Boats</span>
+      <div class="toolcard">
+        <svg class="ic2" viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M8 30h32l-4 8H12z" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/><path d="M24 30V10l12 14" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/></svg>
         <h3>Free boat HIN check</h3>
-        <p>Decode a 12-character hull number: builder, build date, model year, and whether it's even a valid HIN — plus links to the free USCG records the $60 "boat history" sites resell.</p>
-        <form onsubmit="location.href='boats.html?hin='+encodeURIComponent(this.q.value.trim());return false;" class="lookup" style="margin:0 0 8px">
-          <input name="q" placeholder="Enter a 12-char HIN" autocomplete="off" spellcheck="false" aria-label="HIN">
-          <button class="btn" type="submit">Decode</button>
+        <p>Builder, build date, valid-or-not — plus the free USCG records.</p>
+        <form onsubmit="location.href='boats.html?hin='+encodeURIComponent(this.q.value.trim());return false;">
+          <input name="q" placeholder="Enter a HIN" autocomplete="off" aria-label="HIN"><button class="btn btn-pine" type="submit">Decode</button>
         </form>
       </div>
     </div>
-    <p class="muted center" style="margin-top:26px">More coming: salary data (what a job actually pays), flood-zone by address, and more — all free, all from official sources.</p>
   </div>
 </section>
 
-<section class="why">
+<section class="band-pine">
   <div class="wrap">
-    <div class="grid">
-      <div><h3><span class="n">1</span> It's actually free</h3><p class="muted">The data behind these reports is public — NHTSA, the Coast Guard, federal databases. Sherwood reads it live and shows you the answer. No account, no trial, no "unlock for $39."</p></div>
-      <div><h3><span class="n">2</span> It's honest</h3><p class="muted">We don't overclaim. When a record genuinely isn't free — a title history, an accident report — we say so plainly and point you to where it lives, instead of selling you a link to it.</p></div>
-      <div><h3><span class="n">3</span> It's yours</h3><p class="muted">Nothing is stored and nothing is sent anywhere except the government source you're querying. Not affiliated with any agency. Built to inform you, not to farm you.</p></div>
+    <div class="heist">
+      <h2>What should we free next?</h2>
+      <p class="lead" style="color:#d6ddcd;margin:0 auto 4px">Tell us what you're overpaying for. If the data underneath is public, we'll build the app that sets it loose.</p>
+      <form onsubmit="window.location.href='mailto:bobby@trainingties.com?subject=Free%20this%20next%20(Sherwood)&body='+encodeURIComponent(this.q.value);return false;">
+        <input name="q" placeholder="e.g. property records, pet microchips, flight delays…" aria-label="Suggest an app">
+        <button class="btn btn-gold" type="submit">Send it in</button>
+      </form>
+      <p style="color:#9fb0a0;font-size:.9rem;margin-top:10px">No account, obviously. We just read them and build.</p>
     </div>
   </div>
 </section>
 
-<section>
+<section class="band-paper">
   <div class="wrap">
-    <h2 class="center">On your phone, too</h2>
-    <p class="lead center">The same free tools ship as apps — offline, no account.</p>
-    <div class="grid two" style="margin-top:22px;max-width:760px;margin-left:auto;margin-right:auto">
-      <a class="card spoke" href="https://apps.apple.com/us/app/vin-it-free-vin-check/id6838772879" target="_blank" rel="noopener">
-        <svg class="ic" viewBox="0 0 54 54" aria-hidden="true"><rect width="54" height="54" rx="13" fill="var(--forest-700)"/><circle cx="24" cy="24" r="10" fill="none" stroke="var(--gold-soft)" stroke-width="3"/><path d="M31 31l9 9" stroke="var(--gold-soft)" stroke-width="3" stroke-linecap="round"/></svg>
-        <span><strong>VIN It</strong><br><span class="muted">Free VIN check for iPhone</span></span>
-      </a>
-      <a class="card spoke" href="https://apps.apple.com/us/app/hin-it-free-boat-vin-check/id6839038339" target="_blank" rel="noopener">
-        <svg class="ic" viewBox="0 0 54 54" aria-hidden="true"><rect width="54" height="54" rx="13" fill="var(--forest-700)"/><path d="M16 30h22l-3 6H19z" fill="none" stroke="var(--gold-soft)" stroke-width="2.6" stroke-linejoin="round"/><path d="M27 30V16l8 10" fill="none" stroke="var(--gold-soft)" stroke-width="2.6" stroke-linejoin="round"/></svg>
-        <span><strong>HIN It</strong><br><span class="muted">Free boat HIN check for iPhone</span></span>
-      </a>
+    <div class="eyebrow-rule">
+      <svg class="flag" viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M8 4v24" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/><path d="M8 5h17l-4 6 4 6H8z" fill="currentColor"/></svg>
+      <h2>A growing world of free things</h2>
+    </div>
+    <p class="lead" style="margin-bottom:24px">The arsenal keeps growing. Next out of the forest:</p>
+    <div class="world">
+      <div class="wtile"><h4><span class="dot"></span>Salary truth</h4><p>What a job actually pays — from the government wage data the salary sites gate behind an account.</p></div>
+      <div class="wtile"><h4><span class="dot"></span>Flood zone check</h4><p>Is an address in a flood zone? The FEMA map is free; the $20–$500 "determination" doesn't have to be.</p></div>
+      <div class="wtile"><h4><span class="dot"></span>Your idea here</h4><p>Every public dataset with a paywall in front of it is fair game. Send the next one in.</p></div>
     </div>
   </div>
 </section>
 
 <footer class="foot"><div class="wrap">
   <div class="cols">
-    <div style="max-width:28ch">
-      <a class="brand" href="index.html" style="color:#fff"><svg class="mark" viewBox="0 0 32 32" aria-hidden="true" fill="none"><circle cx="14" cy="18" r="11" stroke="#eadfbf" stroke-width="2.2"/><path d="M14 18 L29 3" stroke="var(--gold)" stroke-width="2.6" stroke-linecap="round"/></svg>Sherwood</a>
-      <p style="margin-top:10px">Records they charge for, free. Public data, decoded and handed back to the people it belongs to.</p>
+    <div style="max-width:30ch">
+      <a class="brand" href="index.html" style="color:#fff"><svg class="mark" viewBox="0 0 32 32" aria-hidden="true" fill="none"><circle cx="14" cy="18" r="11" stroke="#e6d9b4" stroke-width="2.2"/><path d="M14 18 L29 3" stroke="var(--gold)" stroke-width="2.6" stroke-linecap="round"/></svg>Sherwood</a>
+      <p style="margin-top:11px">Records they charge for, free. Public data, decoded and handed back to the people it belongs to.</p>
     </div>
-    <div><h4>Tools</h4><ul><li><a href="vehicles.html">Vehicles (VIN)</a></li><li><a href="boats.html">Boats (HIN)</a></li><li><span style="color:#9db0a2">Salary — soon</span></li><li><span style="color:#9db0a2">Flood zone — soon</span></li></ul></div>
-    <div><h4>About</h4><ul><li><a href="about.html">How it works</a></li><li><a href="about.html#sources">Our sources</a></li><li><a href="about.html#support">Support Sherwood</a></li></ul></div>
+    <div><h4>Free apps</h4><ul><li><a href="https://apps.apple.com/app/id6835658692" target="_blank" rel="noopener">GAMELIN</a></li><li><a href="https://apps.apple.com/app/id6838772879" target="_blank" rel="noopener">VIN It</a></li><li><a href="https://apps.apple.com/app/id6839038339" target="_blank" rel="noopener">HIN It</a></li><li><a href="https://apps.apple.com/app/id6835721036" target="_blank" rel="noopener">IEP Binder</a></li><li><a href="https://apps.apple.com/app/id6836650166" target="_blank" rel="noopener">Spare Sense</a></li></ul></div>
+    <div><h4>On the web</h4><ul><li><a href="vehicles.html">Free VIN check</a></li><li><a href="boats.html">Free boat HIN check</a></li><li><a href="#idea">The idea</a></li><li><a href="about.html">How it works</a></li></ul></div>
   </div>
-  <div class="fine">Sherwood decodes free, public government data and tells you honestly what it can and can't show. Not affiliated with NHTSA, the U.S. Coast Guard, Carfax, or any agency or company. Not legal, financial, or safety advice. © <span data-year></span> Sherwood.</div>
+  <div class="fine">Sherwood decodes free, public data and tells you honestly what it can and can't show. Not affiliated with NHTSA, the U.S. Coast Guard, Carfax, the App Store, or any agency or company. Not legal, financial, safety, or betting advice. © <span data-year></span> Sherwood.</div>
 </div></footer>
 <script src="assets/common.js"></script>
 </body>

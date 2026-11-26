@@ -114,7 +114,7 @@
     // VIN-specific recall deep link
     h+='<div class="sec-head">Recalls for this exact VIN</div>';
     h+='<p>NHTSA’s model-level recall list is below. For the open/closed status tied to <em>this specific VIN</em>, use NHTSA’s own VIN recall lookup:</p>';
-    h+='<a class="btn gold" target="_blank" rel="noopener" href="https://www.nhtsa.gov/recalls?vin='+encodeURIComponent(vin)+'">Open NHTSA’s recall check for this VIN ↗</a>';
+    h+='<a class="btn btn-gold" target="_blank" rel="noopener" href="https://www.nhtsa.gov/recalls?vin='+encodeURIComponent(vin)+'">Open NHTSA’s recall check for this VIN ↗</a>';
 
     // honest panel
     h+='<div class="note honest" style="margin-top:22px"><strong>What a free check can’t show — and where it actually lives</strong>'+
