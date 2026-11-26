@@ -136,7 +136,7 @@ section{padding:64px 0}
 .appcard .ic{width:62px;height:62px;border-radius:14px;flex:0 0 auto;box-shadow:0 4px 12px rgba(13,36,27,.16)}
 .appcard h4{font-family:var(--disp);font-size:1.18rem;margin:0 0 2px}
 .appcard p{font-size:.96rem;color:var(--ink-soft);margin:.15em 0 .7em}
-.appcard .foot{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.appcard .cardfoot{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
 .appcard .store{font-weight:600;color:var(--lincoln)}
 .appcard.soon{opacity:.86}
 .appcard.soon .ic{display:flex;align-items:center;justify-content:center;background:var(--pine);color:var(--gold-bright);
