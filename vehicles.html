@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free VIN check — decode any VIN, recalls &amp; safety | Sherwood</title>
+<meta name="description" content="Decode any VIN free: full build sheet, safety equipment, every NHTSA recall, crash-test ratings and owner complaints — from NHTSA's public database. No account. Plus where paid title/accident history actually lives.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/sherwood.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='14' cy='18' r='11' fill='none' stroke='%232f7047' stroke-width='2.4'/%3E%3Cpath d='M14 18 L29 3' stroke='%23c68a2c' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+</head>
+<body>
+<header class="site-head"><div class="wrap">
+  <a class="brand" href="index.html"><svg class="mark" viewBox="0 0 32 32" aria-hidden="true" fill="none"><circle cx="14" cy="18" r="11" stroke="currentColor" stroke-width="2.2"/><circle cx="14" cy="18" r="5" stroke="currentColor" stroke-width="2.2"/><path d="M14 18 L29 3" stroke="var(--gold)" stroke-width="2.6" stroke-linecap="round"/><path d="M29 3 L22.5 4 M29 3 L28 9.5" stroke="var(--gold)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Sherwood</a>
+  <nav class="nav">
+    <a href="vehicles.html">Vehicles</a>
+    <a href="boats.html">Boats</a>
+    <a href="about.html">About</a>
+  </nav>
+</div></header>
+
+<section class="hero">
+  <div class="wrap">
+    <span class="eyebrow">Vehicles · NHTSA</span>
+    <h1>Free VIN check</h1>
+    <p class="lede">Type a VIN. Get the full build sheet, the safety equipment on that exact car, every open recall, and crash-test ratings — read live from NHTSA's free public database.</p>
+    <form id="vinform" class="lookup">
+      <input id="vin" placeholder="1HGCM82633A004352" autocomplete="off" spellcheck="false" autocapitalize="characters" maxlength="17" aria-label="VIN">
+      <button id="go" class="btn" type="submit">Decode</button>
+    </form>
+    <small>17 characters. Nothing is stored — the lookup goes straight to NHTSA.</small>
+  </div>
+</section>
+
+<section class="section-tight">
+  <div class="wrap">
+    <div id="result"></div>
+  </div>
+</section>
+
+<footer class="foot"><div class="wrap">
+  <div class="cols">
+    <div style="max-width:28ch">
+      <a class="brand" href="index.html" style="color:#fff"><svg class="mark" viewBox="0 0 32 32" aria-hidden="true" fill="none"><circle cx="14" cy="18" r="11" stroke="#eadfbf" stroke-width="2.2"/><path d="M14 18 L29 3" stroke="var(--gold)" stroke-width="2.6" stroke-linecap="round"/></svg>Sherwood</a>
+      <p style="margin-top:10px">Records they charge for, free.</p>
+    </div>
+    <div><h4>Tools</h4><ul><li><a href="vehicles.html">Vehicles (VIN)</a></li><li><a href="boats.html">Boats (HIN)</a></li></ul></div>
+    <div><h4>About</h4><ul><li><a href="about.html">How it works</a></li><li><a href="about.html#sources">Our sources</a></li></ul></div>
+  </div>
+  <div class="fine">VIN data from NHTSA's free public vPIC, recalls, SafetyRatings and complaints APIs. Sherwood is not affiliated with NHTSA, Carfax, AutoCheck, or any manufacturer. Recall and complaint data is reported at the model level unless noted. © <span data-year></span> Sherwood.</div>
+</div></footer>
+<script src="assets/common.js"></script>
+<script src="assets/vin.js"></script>
+<script>
+document.getElementById('vinform').addEventListener('submit',function(e){e.preventDefault();window.decodeVIN(document.getElementById('vin').value);});
+</script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sherwood — records they charge for, free</title>
+<meta name="description" content="Companies charge $20–$60 for records that are free and public. Sherwood decodes them for you — VIN checks, boat hull numbers and more — free, honest, no account.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/sherwood.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='14' cy='18' r='11' fill='none' stroke='%232f7047' stroke-width='2.4'/%3E%3Cpath d='M14 18 L29 3' stroke='%23c68a2c' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"Sherwood","url":"/","description":"Free decoders for public records that companies resell — VIN checks, boat hull numbers and more."}
+</script>
+</head>
+<body>
+<header class="site-head"><div class="wrap">
+  <a class="brand" href="index.html"><svg class="mark" viewBox="0 0 32 32" aria-hidden="true" fill="none"><circle cx="14" cy="18" r="11" stroke="currentColor" stroke-width="2.2"/><circle cx="14" cy="18" r="5" stroke="currentColor" stroke-width="2.2"/><path d="M14 18 L29 3" stroke="var(--gold)" stroke-width="2.6" stroke-linecap="round"/><path d="M29 3 L22.5 4 M29 3 L28 9.5" stroke="var(--gold)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Sherwood</a>
+  <nav class="nav">
+    <a href="vehicles.html">Vehicles</a>
+    <a href="boats.html">Boats</a>
+    <a href="about.html">About</a>
+  </nav>
+</div></header>
+
+<section class="hero dark">
+  <div class="wrap">
+    <span class="eyebrow">take from the paywalls · give to the people</span>
+    <h1>Records they charge for.<br>Free.</h1>
+    <p class="lede">Companies charge $20–$60 for information that is free and public. Sherwood decodes it for you — instantly, honestly, with no account and no catch. We'll even tell you where the parts we <em>can't</em> show for free actually live.</p>
+    <div style="margin-top:22px;display:flex;gap:12px;flex-wrap:wrap">
+      <a class="btn gold" href="vehicles.html">Check a vehicle (VIN)</a>
+      <a class="btn ghost" href="boats.html" style="color:#fff;border-color:rgba(255,255,255,.3)">Check a boat (HIN)</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="grid two">
+      <div class="card tool-card">
+        <svg class="ico" viewBox="0 0 48 48" fill="none" aria-hidden="true"><rect x="6" y="20" width="36" height="12" rx="3" stroke="var(--green-500)" stroke-width="2.4"/><path d="M10 20l4-8h20l4 8" stroke="var(--green-500)" stroke-width="2.4" stroke-linejoin="round"/><circle cx="15" cy="32" r="3.5" fill="var(--gold)"/><circle cx="33" cy="32" r="3.5" fill="var(--gold)"/></svg>
+        <span class="tag">Vehicles</span>
+        <h3>Free VIN check</h3>
+        <p>Decode any VIN: full build sheet, safety equipment, every open recall, crash ratings — from NHTSA's free database. The honest version of a Carfax teaser.</p>
+        <form onsubmit="location.href='vehicles.html?vin='+encodeURIComponent(this.q.value.trim());return false;" class="lookup" style="margin:0 0 8px">
+          <input name="q" placeholder="Enter a 17-char VIN" autocomplete="off" spellcheck="false" aria-label="VIN">
+          <button class="btn" type="submit">Decode</button>
+        </form>
+      </div>
+      <div class="card tool-card">
+        <svg class="ico" viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M8 30h32l-4 8H12z" stroke="var(--green-500)" stroke-width="2.4" stroke-linejoin="round"/><path d="M24 30V10l12 14" stroke="var(--green-500)" stroke-width="2.4" stroke-linejoin="round"/><path d="M24 14l-9 10" stroke="var(--gold)" stroke-width="2.4" stroke-linejoin="round"/></svg>
+        <span class="tag">Boats</span>
+        <h3>Free boat HIN check</h3>
+        <p>Decode a 12-character hull number: builder, build date, model year, and whether it's even a valid HIN — plus links to the free USCG records the $60 "boat history" sites resell.</p>
+        <form onsubmit="location.href='boats.html?hin='+encodeURIComponent(this.q.value.trim());return false;" class="lookup" style="margin:0 0 8px">
+          <input name="q" placeholder="Enter a 12-char HIN" autocomplete="off" spellcheck="false" aria-label="HIN">
+          <button class="btn" type="submit">Decode</button>
+        </form>
+      </div>
+    </div>
+    <p class="muted center" style="margin-top:26px">More coming: salary data (what a job actually pays), flood-zone by address, and more — all free, all from official sources.</p>
+  </div>
+</section>
+
+<section class="why">
+  <div class="wrap">
+    <div class="grid">
+      <div><h3><span class="n">1</span> It's actually free</h3><p class="muted">The data behind these reports is public — NHTSA, the Coast Guard, federal databases. Sherwood reads it live and shows you the answer. No account, no trial, no "unlock for $39."</p></div>
+      <div><h3><span class="n">2</span> It's honest</h3><p class="muted">We don't overclaim. When a record genuinely isn't free — a title history, an accident report — we say so plainly and point you to where it lives, instead of selling you a link to it.</p></div>
+      <div><h3><span class="n">3</span> It's yours</h3><p class="muted">Nothing is stored and nothing is sent anywhere except the government source you're querying. Not affiliated with any agency. Built to inform you, not to farm you.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2 class="center">On your phone, too</h2>
+    <p class="lead center">The same free tools ship as apps — offline, no account.</p>
+    <div class="grid two" style="margin-top:22px;max-width:760px;margin-left:auto;margin-right:auto">
+      <a class="card spoke" href="https://apps.apple.com/us/app/vin-it-free-vin-check/id6838772879" target="_blank" rel="noopener">
+        <svg class="ic" viewBox="0 0 54 54" aria-hidden="true"><rect width="54" height="54" rx="13" fill="var(--forest-700)"/><circle cx="24" cy="24" r="10" fill="none" stroke="var(--gold-soft)" stroke-width="3"/><path d="M31 31l9 9" stroke="var(--gold-soft)" stroke-width="3" stroke-linecap="round"/></svg>
+        <span><strong>VIN It</strong><br><span class="muted">Free VIN check for iPhone</span></span>
+      </a>
+      <a class="card spoke" href="https://apps.apple.com/us/app/hin-it-free-boat-vin-check/id6839038339" target="_blank" rel="noopener">
+        <svg class="ic" viewBox="0 0 54 54" aria-hidden="true"><rect width="54" height="54" rx="13" fill="var(--forest-700)"/><path d="M16 30h22l-3 6H19z" fill="none" stroke="var(--gold-soft)" stroke-width="2.6" stroke-linejoin="round"/><path d="M27 30V16l8 10" fill="none" stroke="var(--gold-soft)" stroke-width="2.6" stroke-linejoin="round"/></svg>
+        <span><strong>HIN It</strong><br><span class="muted">Free boat HIN check for iPhone</span></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer class="foot"><div class="wrap">
+  <div class="cols">
+    <div style="max-width:28ch">
+      <a class="brand" href="index.html" style="color:#fff"><svg class="mark" viewBox="0 0 32 32" aria-hidden="true" fill="none"><circle cx="14" cy="18" r="11" stroke="#eadfbf" stroke-width="2.2"/><path d="M14 18 L29 3" stroke="var(--gold)" stroke-width="2.6" stroke-linecap="round"/></svg>Sherwood</a>
+      <p style="margin-top:10px">Records they charge for, free. Public data, decoded and handed back to the people it belongs to.</p>
+    </div>
+    <div><h4>Tools</h4><ul><li><a href="vehicles.html">Vehicles (VIN)</a></li><li><a href="boats.html">Boats (HIN)</a></li><li><span style="color:#9db0a2">Salary — soon</span></li><li><span style="color:#9db0a2">Flood zone — soon</span></li></ul></div>
+    <div><h4>About</h4><ul><li><a href="about.html">How it works</a></li><li><a href="about.html#sources">Our sources</a></li><li><a href="about.html#support">Support Sherwood</a></li></ul></div>
+  </div>
+  <div class="fine">Sherwood decodes free, public government data and tells you honestly what it can and can't show. Not affiliated with NHTSA, the U.S. Coast Guard, Carfax, or any agency or company. Not legal, financial, or safety advice. © <span data-year></span> Sherwood.</div>
+</div></footer>
+<script src="assets/common.js"></script>
+</body>
+</html>

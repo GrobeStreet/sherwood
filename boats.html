@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free boat HIN check — decode a hull identification number | Sherwood</title>
+<meta name="description" content="Decode a 12-character boat HIN free: builder, build date, model year and whether it's a valid hull number — instantly, on-device. Plus links to the free USCG records the $60 boat-history sites resell.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/sherwood.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='14' cy='18' r='11' fill='none' stroke='%232f7047' stroke-width='2.4'/%3E%3Cpath d='M14 18 L29 3' stroke='%23c68a2c' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+</head>
+<body>
+<header class="site-head"><div class="wrap">
+  <a class="brand" href="index.html"><svg class="mark" viewBox="0 0 32 32" aria-hidden="true" fill="none"><circle cx="14" cy="18" r="11" stroke="currentColor" stroke-width="2.2"/><circle cx="14" cy="18" r="5" stroke="currentColor" stroke-width="2.2"/><path d="M14 18 L29 3" stroke="var(--gold)" stroke-width="2.6" stroke-linecap="round"/><path d="M29 3 L22.5 4 M29 3 L28 9.5" stroke="var(--gold)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Sherwood</a>
+  <nav class="nav">
+    <a href="vehicles.html">Vehicles</a>
+    <a href="boats.html">Boats</a>
+    <a href="about.html">About</a>
+  </nav>
+</div></header>
+
+<section class="hero">
+  <div class="wrap">
+    <span class="eyebrow">Boats · U.S. Coast Guard</span>
+    <h1>Free boat HIN check</h1>
+    <p class="lede">A hull identification number is a boat's VIN. Type it in to read the builder, the month and year it was built, the model year, and whether the number is even valid — then jump to the free USCG records that paid "boat history" sites resell for $30–$60.</p>
+    <form id="hinform" class="lookup">
+      <input id="hin" placeholder="SERP3750D797" autocomplete="off" spellcheck="false" autocapitalize="characters" maxlength="14" aria-label="HIN">
+      <button id="go" class="btn" type="submit">Decode</button>
+    </form>
+    <small>12 characters. Runs entirely in your browser — nothing is sent anywhere.</small>
+  </div>
+</section>
+
+<section class="section-tight">
+  <div class="wrap">
+    <div id="result"></div>
+  </div>
+</section>
+
+<footer class="foot"><div class="wrap">
+  <div class="cols">
+    <div style="max-width:28ch">
+      <a class="brand" href="index.html" style="color:#fff"><svg class="mark" viewBox="0 0 32 32" aria-hidden="true" fill="none"><circle cx="14" cy="18" r="11" stroke="#eadfbf" stroke-width="2.2"/><path d="M14 18 L29 3" stroke="var(--gold)" stroke-width="2.6" stroke-linecap="round"/></svg>Sherwood</a>
+      <p style="margin-top:10px">Records they charge for, free.</p>
+    </div>
+    <div><h4>Tools</h4><ul><li><a href="vehicles.html">Vehicles (VIN)</a></li><li><a href="boats.html">Boats (HIN)</a></li></ul></div>
+    <div><h4>About</h4><ul><li><a href="about.html">How it works</a></li><li><a href="about.html#sources">Our sources</a></li></ul></div>
+  </div>
+  <div class="fine">HIN decoding follows the U.S. Coast Guard hull-number standard. The builder table is a small verified convenience list; the USCG registry is the complete source. Not affiliated with the USCG, NICB, or any boat-history company. © <span data-year></span> Sherwood.</div>
+</div></footer>
+<script src="assets/common.js"></script>
+<script src="assets/hin.js"></script>
+<script>
+document.getElementById('hinform').addEventListener('submit',function(e){e.preventDefault();window.decodeHIN(document.getElementById('hin').value);});
+</script>
+</body>
+</html>
