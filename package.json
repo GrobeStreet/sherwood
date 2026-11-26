@@ -1,0 +1,8 @@
+{
+  "name": "sherwood",
+  "private": true,
+  "description": "Sherwood — free apps and web tools for public records and tools people overcharge for.",
+  "dependencies": {
+    "@netlify/blobs": "^8.1.0"
+  }
+}

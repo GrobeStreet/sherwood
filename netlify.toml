@@ -1,0 +1,9 @@
+# Sherwood — static site + privacy-first analytics functions.
+# No build step: the site is plain HTML/CSS/JS served from the repo root.
+# Netlify installs dependencies from package.json automatically and deploys
+# the functions in netlify/functions/.
+
+[build]
+  publish = "."
+  functions = "netlify/functions"
+  command = ""
